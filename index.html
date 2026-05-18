@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacidades Coordinativas: Lateralidad y Equilibrio</title>
+    <meta name="description" content="Innovación Pedagógica en la Educación Física, ilustrado sobre las capacidades coordinativas de lateralidad y equilibrio, fundamentado en autores reconocidos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header class="main-header">
+        <img src="upel.png" alt="Logo UPEL" class="banner-logo">
+        <h1>Capacidades Coordinativas</h1>
+        <p>Herramienta interactiva para la Formación Docente en Educación Física</p>
+    </header>
+
+    <main class="container carousel-container">
+        <!-- Menú del Carrusel -->
+        <div class="carousel-menu">
+            <button class="menu-tab active" data-slide="0" style="--tab-color: #e11d48;">💪 Acondicionamiento</button>
+            <button class="menu-tab" data-slide="1" style="--tab-color: #2563eb;">↔️ Lateralidad</button>
+            <button class="menu-tab" data-slide="2" style="--tab-color: #16a34a;">🧘 Equilibrio</button>
+        </div>
+
+        <div class="carousel-wrapper">
+            <div class="carousel-track" id="carousel-track">
+                <!-- SECCIÓN ACONDICIONAMIENTO -->
+                <section class="card-section slide current-slide" id="acondicionamiento">
+                    <div class="card-content" style="flex: 1; padding: 2rem;">
+                        <h2 style="text-align: center;">Acondicionamiento Neuromuscular</h2>
+                        <p class="description" style="text-align: center;">Galería fotográfica con dinámicas orientadas a preparar el cuerpo y el sistema nervioso para la actividad física, asegurando un desempeño óptimo.</p>
+                        
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="1.jpeg" alt="Acondicionamiento 1" class="gallery-img">
+                                <img src="upel.png" alt="UPEL Logo" class="gallery-logo">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="2.jpeg" alt="Acondicionamiento 2" class="gallery-img">
+                                <img src="upel.png" alt="UPEL Logo" class="gallery-logo">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="3.jpeg" alt="Acondicionamiento 3" class="gallery-img">
+                                <img src="upel.png" alt="UPEL Logo" class="gallery-logo">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="4.jpeg" alt="Acondicionamiento 4" class="gallery-img">
+                                <img src="upel.png" alt="UPEL Logo" class="gallery-logo">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="5.jpeg" alt="Acondicionamiento 5" class="gallery-img">
+                                <img src="upel.png" alt="UPEL Logo" class="gallery-logo">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="6.jpeg" alt="Acondicionamiento 6" class="gallery-img">
+                                <img src="upel.png" alt="UPEL Logo" class="gallery-logo">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="7.jpeg" alt="Acondicionamiento 7" class="gallery-img">
+                                <img src="upel.png" alt="UPEL Logo" class="gallery-logo">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECCIÓN LATERALIDAD -->
+                <section class="card-section slide" id="lateralidad">
+            <div class="card-image">
+                <img src="assets/lateralidad.png" alt="Ilustración de niños jugando y explorando la lateralidad" style="margin-bottom: 1rem;">
+                <video id="vid-lateral" class="clickable-video" src="lateral.mp4" autoplay loop muted playsinline alt="Video demostrativo de capacidad lateral" title="Haz clic para expandir"></video>
+                <div class="badge">Lateralidad</div>
+            </div>
+            
+            <div class="card-content">
+                <h2>Explorando la Lateralidad</h2>
+                
+                <blockquote class="author-quote">
+                    <p>"La lateralidad es la expresión de un predominio motor realizado con las partes del cuerpo que integran sus mitades derecha e izquierda."</p>
+                    <cite>— Castañer y Camerino (1991)</cite>
+                </blockquote>
+                
+                <p class="description">
+                    Como futuros docentes, comprender la lateralidad es clave para evaluar cómo el escolar define su orientación espacial y esquema corporal. Otra perspectiva pedagógica relevante la aporta <strong>Le Boulch (1997)</strong>, quien la define como la "traducción de una asimetría funcional".
+                </p>
+
+                <div class="didactic-resource">
+                    <h3>Simulador de Evaluación: Tiempo de Reacción Lateral</h3>
+                    <p>Experimenta cómo evaluar la velocidad de procesamiento ante estímulos asimétricos.</p>
+                    
+                    <div class="game-container" id="game-lat">
+                        <div class="game-area">
+                            <div class="game-side" id="side-left"></div>
+                            <div class="game-side" id="side-right"></div>
+                            <div id="star-target" class="star hidden">⭐</div>
+                        </div>
+                        <div class="game-controls">
+                            <button id="btn-left" class="btn btn-primary">Izquierda</button>
+                            <button id="btn-start-lat" class="btn btn-secondary">Iniciar</button>
+                            <button id="btn-right" class="btn btn-primary">Derecha</button>
+                        </div>
+                        <p id="lat-score">Puntuación: <span>0</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- SECCIÓN EQUILIBRIO -->
+                <section class="card-section reverse slide" id="equilibrio">
+            <div class="card-image">
+                <img src="assets/equilibrio.png" alt="Ilustración de un niño manteniendo el equilibrio" style="margin-bottom: 1rem;">
+                <video id="vid-equilibrio" class="clickable-video" src="equilibrio.mp4" autoplay loop muted playsinline alt="Video demostrativo de equilibrio" title="Haz clic para expandir"></video>
+                <div class="badge badge-alt">Equilibrio</div>
+            </div>
+            
+            <div class="card-content">
+                <h2>El Dominio del Equilibrio</h2>
+                
+                <blockquote class="author-quote alt-quote">
+                    <p>"El equilibrio es la capacidad de asumir y mantener una posición del cuerpo contra la fuerza de gravedad."</p>
+                    <cite>— Mosston (1993)</cite>
+                </blockquote>
+                
+                <p class="description">
+                    La estimulación del equilibrio es una competencia central en el diseño de sesiones de Educación Física. Como señala <strong>Álvarez del Villar (1987)</strong>, es la "habilidad de mantener el cuerpo en la postura deseada sea en reposo o en movimiento", vital para el desarrollo psicomotor de los alumnos.
+                </p>
+
+                <div class="didactic-resource">
+                    <h3>Simulador de Ajuste Postural: Reacciones Compensatorias</h3>
+                    <p>Analiza el mecanismo de retroalimentación necesario para estabilizar el centro de gravedad del alumno.</p>
+                    
+                    <div class="game-container" id="game-eq">
+                        <div class="balance-area">
+                            <div class="balance-beam" id="beam">
+                                <div class="balance-ball" id="ball"></div>
+                            </div>
+                        </div>
+                        <div class="game-controls">
+                            <button id="btn-tilt-left" class="btn btn-primary">Inclinar Izq.</button>
+                            <button id="btn-start-eq" class="btn btn-secondary">Iniciar</button>
+                            <button id="btn-tilt-right" class="btn btn-primary">Inclinar Der.</button>
+                        </div>
+                        <p id="eq-status">Estado: <span>Esperando...</span></p>
+                    </div>
+                </div>
+            </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p class="footer-title">Innovación Pedagógica en la Educación Física &copy; 2026</p>
+        <p class="footer-designers">Diseñadores: <span class="designer-name">Wilter Gonzalez</span> y <span class="designer-name">Eyleen Gutierrez</span></p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button id="lightbox-prev" class="lightbox-nav-btn">&larr;</button>
+        <img class="lightbox-content" id="lightbox-img">
+        <button id="lightbox-next" class="lightbox-nav-btn">&rarr;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
